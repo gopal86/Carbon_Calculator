@@ -1,0 +1,116 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="style.css" type="text/css" rel="stylesheet"/>
+<link rel='shortcut icon' href='Images/carbon.jpg' type='image/x-icon'/ >
+
+<title>Green Footprint</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link href="SpryAssets/SpryValidationTextField.css" rel="stylesheet" type="text/css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+<script src="javascript.js" type="text/javascript">
+
+
+</script>
+</head>
+
+<body>
+
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <img src="Images/carbon.jpg" width="30" />
+      <a class="navbar-brand" href="index.html">Carbon Calculator</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="index.html">Purchases</a></li>
+        <li><a href="housing.html">Housing</a></li>
+        <!--<li><a href="purchases.html">Purchases</a></li>-->
+        <li><a href="travel.html">Travel</a></li>
+        <li><a href="food.html">Secondry</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="numbers.html">Numbers</a></li>
+        <li><a href="recyclables.html">Recyclable</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<br />
+
+
+<div class="calc">
+<br />
+<form name="form1">
+
+  <h2>Consumption</h2>
+     <br/>
+
+       <div class="form-group">
+
+      <label for="calcPurchasePlastic" class="col-sm-2 control-label">Electricity(KWh): </label>
+      <div class="col-sm-3">
+        	<input type="number" class="form-control" name="calcPurchasePlastic" id="calcPurchasePlastic" value="0">
+     </div> <br /><br />
+
+      <label for="calcPurchaseCans" class="col-sm-2 control-label">Natural Gas(KWh):</label>
+      	<div class="col-sm-3">
+        		<input type="number" class="form-control" name="calcPurchaseCans" id="calcPurchaseCans" value="0">
+     </div> <br /><br />
+
+
+      <label for="calcPurchaseGlass" class="col-sm-2 control-label">Heating Oil(litre):</label>
+      	<div class="col-sm-3">
+        		<input type="number" class="form-control" name="calcPurchaseGlass" id="calcPurchaseGlass" value="0">
+     </div> <br /><br />
+
+       <label for="calcPurchaseBeef" class="col-sm-2 control-label">LPG(litre):</label>
+      	<div class="col-sm-3">
+        		<input type="number" class="form-control" name="calcPurchaseBeef" id="calcPurchaseBeef" value="0">
+     </div> <br /><br />
+
+   </div>
+
+	</form>
+  <br /><br />
+  <button id="BUTTONID" class="btn btn-success" onclick="housing()">Calculate</button>
+  <button id="BUTTONID" class="btn btn-success" onclick="window.location='final.html'">Finish</button>
+  <!--<button id="BUTTONID" class="btn btn-success" onclick="calcResults()">Calculate</button>-->
+
+</div>
+
+
+
+<div class="calcResults">
+  <h2><span>Results</span></h2>
+  <h2>Your carbon footprint for today was: </h2>
+  <p id="calcResults"></p>
+  <br>
+  <p id="graphs"></p>
+</div>
+
+
+<footer>
+  Developed by Gopal Chitalia and Swapnil Nayan!!
+</footer>
+
+
+<script src = "javascript.js"></script>
+
+
+</body>
+</html>
